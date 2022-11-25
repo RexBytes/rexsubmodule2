@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rexsubmodule2"
+version = "0.0.1"
+authors = [
+  { name="Good Boy", email="pythonic@rexbytes.com" },
+]
+description = "A simple submodule two example"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+#The default location where setuptools will look for your 
+#package and other directories is "src".
+#You don't need the following table if you use "src"
+#I leave it here if you want to put your packages in a
+#dir other thant "src", or list multiple directories.
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/RexBytes/rexsubmodule2"
+"Bug Tracker" = "https://github.com/RexBytes/rexsubmodule2/issues"
+"Download URL" ="https://github.com/RexBytes/rexsubmodule2/archive/refs/tags/v0.0.1.tar.gz"
+
